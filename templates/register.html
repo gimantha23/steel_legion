@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<body>
+
+<main class="mt-5 pt-4">
+    <div class="container wow fadeIn">
+
+        <h2 class="my-5 h2 text-center">User Register</h2>
+    </div>
+</main>
+</body>
+
+<form class="text-center border border-light p-5" method="post">{% csrf_token %}
+
+    {{ form }}
+    <input class="btn btn-info my-4 btn-block" type="submit">
+
+</form>
+
+{% endblock %}
